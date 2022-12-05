@@ -32,25 +32,24 @@ public class DelegacionServiceImpl implements DelegacionService {
 	@Autowired
 	private SsccDelegacionRepository ssccDelegacionRepository;
 
-
 	/*
-	 * solo prueba 
-	 * revisar y definir uso de mappers  y demas
+	 * solo prueba revisar y definir uso de mappers y demas
 	 */
 	@Override
 	public ResponseEntity<?> getDelegaciones() {
 		log.info("Inicio DelegacionService getDelegaciones");
 		List<SsccDelegacionDto> delegacionDtos = new ArrayList<>();
 		try {
+			// ejemplo projection
+			//SsccDelegacionView delegacionProjection = ssccDelegacionRepository.findByRefAbreviacion("DFS",SsccDelegacionView.class);
 			List<SsccDelegacion> delegaciones = ssccDelegacionRepository.findAll();
 			// delegacionDtos = ObjectMapperUtils.mapAll(delegaciones,SsccDelegacionDto.class);
 			delegacionDtos = delegacionMapper.toLstDto(delegaciones);
 		} catch (Exception e) {
 			log.error("Exception DelegacionService getDelegaciones", e);
-			return new ResponseEntity<>(null,HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		return new ResponseEntity<>(delegacionDtos, HttpStatus.OK);
 	}
 
-	
 }
