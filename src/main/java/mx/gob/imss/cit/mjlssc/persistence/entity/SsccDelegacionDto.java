@@ -1,4 +1,4 @@
-package mx.gob.imss.cit.mjlssc.model.entity;
+package mx.gob.imss.cit.mjlssc.persistence.entity;
 
 import lombok.Data;
 import mx.gob.imss.cit.mjlssc.persistence.entity.SsccDelegacion;
@@ -13,11 +13,7 @@ import java.util.Date;
  */
 @Data
 public class SsccDelegacionDto implements Serializable {
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 4751457832364680303L;
-	private final Integer id;
+    private final Integer id;
     @Size(max = 30)
     private final String desDelegacion;
     @Size(max = 3)

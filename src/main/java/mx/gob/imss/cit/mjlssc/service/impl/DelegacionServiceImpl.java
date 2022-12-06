@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import lombok.extern.log4j.Log4j2;
 import mx.gob.imss.cit.mjlssc.model.assembler.DelegacionMapper;
 import mx.gob.imss.cit.mjlssc.model.entity.SsccDelegacionDto;
+import mx.gob.imss.cit.mjlssc.model.projection.SsccDelegacionInfo;
 import mx.gob.imss.cit.mjlssc.persistence.entity.SsccDelegacion;
 import mx.gob.imss.cit.mjlssc.persistence.repository.SsccDelegacionRepository;
 import mx.gob.imss.cit.mjlssc.service.DelegacionService;
@@ -41,7 +42,7 @@ public class DelegacionServiceImpl implements DelegacionService {
 		List<SsccDelegacionDto> delegacionDtos = new ArrayList<>();
 		try {
 			// ejemplo projection
-			//SsccDelegacionView delegacionProjection = ssccDelegacionRepository.findByRefAbreviacion("DFS",SsccDelegacionView.class);
+			SsccDelegacionInfo delegacionProjection = ssccDelegacionRepository.findByRefAbreviacion("DFS",SsccDelegacionInfo.class);
 			List<SsccDelegacion> delegaciones = ssccDelegacionRepository.findAll();
 			// delegacionDtos = ObjectMapperUtils.mapAll(delegaciones,SsccDelegacionDto.class);
 			delegacionDtos = delegacionMapper.toLstDto(delegaciones);

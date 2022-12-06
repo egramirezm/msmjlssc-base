@@ -1,7 +1,7 @@
 package mx.gob.imss.cit.mjlssc.model.entity;
 
 import lombok.Data;
-import mx.gob.imss.cit.mjlssc.persistence.entity.SsccDelegacion;
+import mx.gob.imss.cit.mjlssc.persistence.entity.SsccCentroConciliacion;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -9,19 +9,18 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * A DTO for the {@link SsccDelegacion} entity
+ * A DTO for the {@link SsccCentroConciliacion} entity
  */
 @Data
-public class SsccDelegacionDto implements Serializable {
+public class SsccCentroConciliacionDto implements Serializable {
     /**
 	 * 
 	 */
-	private static final long serialVersionUID = 4751457832364680303L;
+	private static final long serialVersionUID = 5697374761605667670L;
 	private final Integer id;
-    @Size(max = 30)
-    private final String desDelegacion;
-    @Size(max = 3)
-    private final String refAbreviacion;
+    @Size(max = 100)
+    private final String desCentroConciliacion;
+    private final Integer cveAlcance;
     @NotNull
     private final Date fecAlta;
     private final Date fecBaja;
@@ -33,4 +32,5 @@ public class SsccDelegacionDto implements Serializable {
     private final String cveUsuarioBaja;
     @Size(max = 60)
     private final String cveUsuarioModifica;
+    private final Integer cveCentroConciliacionAnterior;
 }
