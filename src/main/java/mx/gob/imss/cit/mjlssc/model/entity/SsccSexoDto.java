@@ -17,18 +17,18 @@ public class SsccSexoDto implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 8406386875991845522L;
-	private final Integer id;
+	private  Integer id;
     @Size(max = 10)
-    private final String desSexo;
+    private  String desSexo;
     @NotNull
-    private final Date fecAlta;
-    private final Date fecBaja;
-    private final Date fecModifica;
+    private  Date fecAlta;
+    private  Date fecBaja;
+    private  Date fecModifica;
     @Size(max = 60)
     @NotNull
-    private final String cveUsuarioAlta;
+    private  String cveUsuarioAlta;
     @Size(max = 60)
-    private final String cveUsuarioBaja;
+    private  String cveUsuarioBaja;
     @Size(max = 60)
-    private final String cveUsuarioModifica;
+    private  String cveUsuarioModifica;
 }

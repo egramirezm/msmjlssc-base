@@ -17,21 +17,21 @@ public class SsccMunicipioAlcaldiaDto implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 3001598257688472213L;
-	private final Integer id;
+	private  Integer id;
     @NotNull
-    private final SsccEstadoDto cveEstado;
+    private  SsccEstadoDto cveEstado;
     @Size(max = 55)
-    private final String refNomMunicipioAlcaldia;
-    private final Boolean indEstatus;
+    private  String refNomMunicipioAlcaldia;
+    private  Boolean indEstatus;
     @NotNull
-    private final Date fecAlta;
-    private final Date fecBaja;
-    private final Date fecModifica;
+    private  Date fecAlta;
+    private  Date fecBaja;
+    private  Date fecModifica;
     @Size(max = 60)
     @NotNull
-    private final String cveUsuarioAlta;
+    private  String cveUsuarioAlta;
     @Size(max = 60)
-    private final String cveUsuarioBaja;
+    private  String cveUsuarioBaja;
     @Size(max = 60)
-    private final String cveUsuarioModifica;
+    private  String cveUsuarioModifica;
 }

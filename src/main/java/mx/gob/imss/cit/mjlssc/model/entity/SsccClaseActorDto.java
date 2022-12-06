@@ -17,18 +17,18 @@ public class SsccClaseActorDto implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -3787355793180530202L;
-	private final Integer id;
+	private  Integer id;
     @Size(max = 40)
-    private final String desClaseActor;
+    private  String desClaseActor;
     @NotNull
-    private final Date fecAlta;
-    private final Date fecBaja;
-    private final Date fecModifica;
+    private  Date fecAlta;
+    private  Date fecBaja;
+    private  Date fecModifica;
     @Size(max = 60)
     @NotNull
-    private final String cveUsuarioAlta;
+    private  String cveUsuarioAlta;
     @Size(max = 60)
-    private final String cveUsuarioBaja;
+    private  String cveUsuarioBaja;
     @Size(max = 60)
-    private final String cveUsuarioModifica;
+    private  String cveUsuarioModifica;
 }

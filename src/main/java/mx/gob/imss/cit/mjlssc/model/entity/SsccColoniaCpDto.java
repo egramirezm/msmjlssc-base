@@ -17,23 +17,23 @@ public class SsccColoniaCpDto implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1282627518206002142L;
-	private final Integer id;
+	private  Integer id;
     @NotNull
-    private final SsccMunicipioAlcaldiaDto cveMunicipioAlcaldia;
+    private  SsccMunicipioAlcaldiaDto cveMunicipioAlcaldia;
     @Size(max = 70)
-    private final String refNomColoniaCp;
+    private  String refNomColoniaCp;
     @Size(max = 5)
-    private final String refCp;
-    private final Boolean indEstatus;
+    private  String refCp;
+    private  Boolean indEstatus;
     @NotNull
-    private final Date fecAlta;
-    private final Date fecBaja;
-    private final Date fecModifica;
+    private  Date fecAlta;
+    private  Date fecBaja;
+    private  Date fecModifica;
     @Size(max = 60)
     @NotNull
-    private final String cveUsuarioAlta;
+    private  String cveUsuarioAlta;
     @Size(max = 60)
-    private final String cveUsuarioBaja;
+    private  String cveUsuarioBaja;
     @Size(max = 60)
-    private final String cveUsuarioModifica;
+    private  String cveUsuarioModifica;
 }

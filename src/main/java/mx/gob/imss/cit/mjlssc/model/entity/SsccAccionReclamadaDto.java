@@ -18,22 +18,22 @@ public class SsccAccionReclamadaDto implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 3393495948850794366L;
-	private final Integer id;
+	private  Integer id;
     @Size(max = 120)
-    private final String desAccionReclamada;
-    private final BigDecimal impEstimado;
+    private  String desAccionReclamada;
+    private  BigDecimal impEstimado;
     @NotNull
-    private final Integer cveClasAccionReclamada;
-    private final BigDecimal numFactorCalculo;
+    private  Integer cveClasAccionReclamada;
+    private  BigDecimal numFactorCalculo;
     @NotNull
-    private final Date fecAlta;
-    private final Date fecBaja;
-    private final Date fecModifica;
+    private  Date fecAlta;
+    private  Date fecBaja;
+    private  Date fecModifica;
     @Size(max = 60)
     @NotNull
-    private final String cveUsuarioAlta;
+    private  String cveUsuarioAlta;
     @Size(max = 60)
-    private final String cveUsuarioBaja;
+    private  String cveUsuarioBaja;
     @Size(max = 60)
-    private final String cveUsuarioModifica;
+    private  String cveUsuarioModifica;
 }

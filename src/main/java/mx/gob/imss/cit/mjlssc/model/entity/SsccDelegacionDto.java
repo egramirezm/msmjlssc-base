@@ -17,20 +17,20 @@ public class SsccDelegacionDto implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 4751457832364680303L;
-	private final Integer id;
+	private  Integer id;
     @Size(max = 30)
-    private final String desDelegacion;
+    private  String desDelegacion;
     @Size(max = 3)
-    private final String refAbreviacion;
+    private  String refAbreviacion;
     @NotNull
-    private final Date fecAlta;
-    private final Date fecBaja;
-    private final Date fecModifica;
+    private  Date fecAlta;
+    private  Date fecBaja;
+    private  Date fecModifica;
     @Size(max = 60)
     @NotNull
-    private final String cveUsuarioAlta;
+    private  String cveUsuarioAlta;
     @Size(max = 60)
-    private final String cveUsuarioBaja;
+    private  String cveUsuarioBaja;
     @Size(max = 60)
-    private final String cveUsuarioModifica;
+    private  String cveUsuarioModifica;
 }

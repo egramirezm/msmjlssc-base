@@ -18,84 +18,84 @@ public class SsccUmfDto implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 8474062930320167040L;
-	private final Integer id;
+	private  Integer id;
     @Size(max = 200)
-    private final String desUmf;
+    private  String desUmf;
     @Size(max = 20)
-    private final String refClues;
+    private  String refClues;
     @Size(max = 13)
-    private final String refRegion;
+    private  String refRegion;
     @Size(max = 15)
-    private final String refClavePersonal;
+    private  String refClavePersonal;
     @Size(max = 11)
-    private final String refUnidadDeInformacionPrei;
+    private  String refUnidadDeInformacionPrei;
     @Size(max = 11)
-    private final String refClaveUbicacionAdmin;
+    private  String refClaveUbicacionAdmin;
     @Size(max = 13)
-    private final String refClavePresupuestal;
+    private  String refClavePresupuestal;
     @Size(max = 2)
-    private final String refClaveDelegacionOUmae;
+    private  String refClaveDelegacionOUmae;
     @Size(max = 29)
-    private final String refNombreDelegacionOUmae;
+    private  String refNombreDelegacionOUmae;
     @Size(max = 19)
-    private final String refRelacionDelegacionUmae;
+    private  String refRelacionDelegacionUmae;
     @Size(max = 4)
-    private final String refUnidadPresupuestal;
+    private  String refUnidadPresupuestal;
     @Size(max = 13)
-    private final String refNivelDeAtencion;
+    private  String refNivelDeAtencion;
     @Size(max = 2)
-    private final String refTipoDeServicio;
+    private  String refTipoDeServicio;
     @Size(max = 8)
-    private final String refDescripcionTipoServicio;
+    private  String refDescripcionTipoServicio;
     @Size(max = 3)
-    private final String refNumeroDeUnidad;
+    private  String refNumeroDeUnidad;
     @Size(max = 49)
-    private final String refNombreUnidad;
+    private  String refNombreUnidad;
     @Size(max = 26)
-    private final String refUbicacionODenominacion;
+    private  String refUbicacionODenominacion;
     @Size(max = 25)
-    private final String refTipoDeVialidad;
+    private  String refTipoDeVialidad;
     @Size(max = 92)
-    private final String refNombreDeVialidad;
+    private  String refNombreDeVialidad;
     @Size(max = 12)
-    private final String refNumeroExterior;
+    private  String refNumeroExterior;
     @Size(max = 21)
-    private final String refTipoDeAsentamiento;
+    private  String refTipoDeAsentamiento;
     @Size(max = 47)
-    private final String refNombreDelAsentamiento;
+    private  String refNombreDelAsentamiento;
     @Size(max = 5)
-    private final String refCodigoPostal;
+    private  String refCodigoPostal;
     @Size(max = 3)
-    private final String refClaveMunicipioDelegacion;
+    private  String refClaveMunicipioDelegacion;
     @Size(max = 49)
-    private final String refMunicipioDelegacion;
+    private  String refMunicipioDelegacion;
     @Size(max = 4)
-    private final String refClaveLocalidad;
+    private  String refClaveLocalidad;
     @Size(max = 45)
-    private final String refLocalidad;
+    private  String refLocalidad;
     @Size(max = 2)
-    private final String refClaveEntidadFederativa;
+    private  String refClaveEntidadFederativa;
     @Size(max = 32)
-    private final String refEntidadFederativa;
+    private  String refEntidadFederativa;
     @Size(max = 2)
-    private final String refClaveJurisdiccionSanitar;
+    private  String refClaveJurisdiccionSanitar;
     @Size(max = 27)
-    private final String refJurisdiccionSanitaria;
+    private  String refJurisdiccionSanitaria;
     @Size(max = 13)
-    private final String refLatitud;
+    private  String refLatitud;
     @Size(max = 14)
-    private final String refLongitud;
+    private  String refLongitud;
     @Size(max = 26)
-    private final String refInicioDeProductividad;
+    private  String refInicioDeProductividad;
     @NotNull
-    private final Date fecAlta;
-    private final Date fecBaja;
-    private final Date fecModifica;
+    private  Date fecAlta;
+    private  Date fecBaja;
+    private  Date fecModifica;
     @Size(max = 60)
     @NotNull
-    private final String cveUsuarioAlta;
+    private  String cveUsuarioAlta;
     @Size(max = 60)
-    private final String cveUsuarioBaja;
+    private  String cveUsuarioBaja;
     @Size(max = 60)
-    private final String cveUsuarioModifica;
+    private  String cveUsuarioModifica;
 }

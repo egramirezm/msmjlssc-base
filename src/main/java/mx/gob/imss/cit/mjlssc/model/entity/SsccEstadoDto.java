@@ -17,19 +17,19 @@ public class SsccEstadoDto implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -2337303875416979672L;
-	private final Integer id;
+	private  Integer id;
     @Size(max = 35)
-    private final String refNomEstado;
-    private final Boolean indEstatus;
+    private  String refNomEstado;
+    private  Boolean indEstatus;
     @NotNull
-    private final Date fecAlta;
-    private final Date fecBaja;
-    private final Date fecModifica;
+    private  Date fecAlta;
+    private  Date fecBaja;
+    private  Date fecModifica;
     @Size(max = 60)
     @NotNull
-    private final String cveUsuarioAlta;
+    private  String cveUsuarioAlta;
     @Size(max = 60)
-    private final String cveUsuarioBaja;
+    private  String cveUsuarioBaja;
     @Size(max = 60)
-    private final String cveUsuarioModifica;
+    private  String cveUsuarioModifica;
 }
